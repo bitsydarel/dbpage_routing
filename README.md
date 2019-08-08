@@ -10,7 +10,11 @@ A simple usage example:
 import 'package:dbpage_routing/dbpage_routing.dart';
 
 @PageRoutePath("/")
-class AwesomeWidget extends StatelessWidget {
+class HomePageWidget extends StatelessWidget {
+}
+
+@PageRoutePath("/?username?password", arguments: {"username": String, "password": String})
+class LoginPage extends StatelessWidget {
 }
 ```
 
