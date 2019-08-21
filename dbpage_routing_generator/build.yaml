@@ -1,0 +1,14 @@
+targets:
+  $default:
+    builders:
+      dbpage_routing_generator:
+
+builders:
+  dbpage_routing_generator:
+    target: ":dbpage_routing"
+    import: "package:dbpage_routing_generator/builder.dart"
+    builder_factories: ["pageRoutingBuilder"]
+    build_extensions: {".dart" : ["dbpage_routing_generator.g.part"]}
+    auto_apply: dependents
+    build_to: cache
+    applies_builders: ["source_gen|combining_builder"]

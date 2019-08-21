@@ -3,7 +3,7 @@ import "package:meta/meta.dart" show literal;
 /// Page Route path.
 ///
 /// Contains information about the location of page and his parameters.
-class PageRoutePath {
+class PagePath {
   /// Used to annotated a Widget `X`.
   ///
   /// Indicates the [path] of widget and the [arguments] the widget depends on.
@@ -18,27 +18,22 @@ class PageRoutePath {
   ///
   /// {"argument1": String, "argument2": String}
   @literal
-  const PageRoutePath(this.path, {this.arguments});
+  const PagePath(this.path)
+      : assert(path != null, "path parameter can't be null");
 
   /// Page's path.
   final String path;
 
-  /// Page's arguments.
-  final Map<String, dynamic> arguments;
-
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
-      other is PageRoutePath &&
+      other is PagePath &&
           runtimeType == other.runtimeType &&
-          path == other.path &&
-          arguments == other.arguments;
+          path == other.path;
 
   @override
-  int get hashCode => path.hashCode ^ arguments.hashCode;
+  int get hashCode => path.hashCode;
 
   @override
-  String toString() {
-    return "PageRoutePath{path: $path, arguments: $arguments}";
-  }
+  String toString() => "PageRoutePath{path: $path}";
 }

@@ -10,6 +10,9 @@ environment:
 dependencies:
   source_gen: ^0.9.4+3
   code_builder: ^3.2.0
+  build_config: ^0.4.1+1
+  dbpage_routing:
+    path: "../"
 
 dev_dependencies:
   flutter_code_style:
@@ -17,3 +20,4 @@ dev_dependencies:
       url: git://github.com/bitsydarel/flutter-code-style.git
       ref: v1.6.1
   test: ^1.0.0
+  mockito: ^4.1.0
