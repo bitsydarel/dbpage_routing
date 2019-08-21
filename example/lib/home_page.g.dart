@@ -40,7 +40,7 @@ bool $matchRoute(String path) {
         return false;
       }
 
-      if (segment.type is int && int.tryParse(otherSegment.name) == null) {
+      if (segment.type == int && int.tryParse(otherSegment.name) == null) {
         return false;
       } else if (segment.isConstant && segment.name != otherSegment.name) {
         return false;
