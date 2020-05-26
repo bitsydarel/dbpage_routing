@@ -8,16 +8,13 @@ environment:
   sdk: ">=2.2.0 <3.0.0"
 
 dependencies:
-  source_gen: ^0.9.4+3
-  code_builder: ^3.2.0
-  build_config: ^0.4.1+1
+  source_gen: ^0.9.5
+  code_builder: ^3.3.0
+  build_config: ^0.4.2
   dbpage_routing:
     path: "../"
 
 dev_dependencies:
-  flutter_code_style:
-    git:
-      url: git://github.com/bitsydarel/flutter-code-style.git
-      ref: v1.6.1
+  flutter_code_style: ^1.6.8
   test: ^1.0.0
   mockito: ^4.1.0

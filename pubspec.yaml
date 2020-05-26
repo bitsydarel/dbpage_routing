@@ -11,8 +11,5 @@ dependencies:
   test: ^1.6.7
 
 dev_dependencies:
-  flutter_code_style:
-    git:
-      url: git://github.com/bitsydarel/flutter-code-style.git
-      ref: v1.6.1
+  flutter_code_style: ^1.6.8
   meta: ^1.1.7

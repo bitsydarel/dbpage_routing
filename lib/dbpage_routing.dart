@@ -13,3 +13,5 @@ export "src/page_path_info.dart";
 export "src/page_path_metada.dart";
 
 export "src/page_path_segment_metadata.dart";
+
+export "src/test_annotation.dart";
